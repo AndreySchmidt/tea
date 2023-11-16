@@ -209,6 +209,168 @@ ul {
   font-weight: 600;
 }
 
+.main-blog {
+  padding: 150px 0;
+}
+
+.main-blog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 58px;
+}
+
+.main-blog__item {
+  display: flex;
+  gap: 0 20px;
+  flex-basis: 542px;
+}
+
+.main-blog__item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-blog__item-title {
+  min-height: 86px;
+  margin-bottom: 10px;
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-blog__item-author {
+  font-size: 13px;
+}
+
+.main-blog__item-link {
+  font-size: 13px;
+  margin-top: auto;
+  position: relative;
+}
+
+.main-blog__item-link::after {
+  content: "";
+  background-image: url(../images/arrow.svg);
+  position: absolute;
+  bottom: 4px;
+  width: 5px;
+  height: 10px;
+  margin-left: 8px;
+}
+
+.main-blog__link {
+  display: flex;
+  justify-content: center;
+  width: 154px;
+  padding: 12px 41px;
+  margin: 72px auto 0;
+  border: 1px solid #151618;
+  line-height: normal;
+}
+
+.mailing-list {
+  padding: 100px 0;
+  background-color: #f7f2ea;
+  background-image: url(../images/tea.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.mailing-list__title {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.mailing-list__inner {
+  display: flex;
+  gap: 60px 40px;
+}
+
+.mailing-list__text {
+  flex-basis: 580px;
+}
+
+.mailing-list__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 580px;
+}
+
+.mailing-list__email {
+  width: 438px;
+  border: none;
+  border-bottom: 1px solid #b8b58b;
+  background-color: transparent;
+  margin-right: 25px;
+  padding: 3px 15px;
+
+  font-family: "Open Sans", sans-serif;
+  color: #151618;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.mailing-list__email::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: #b8b58b;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.mailing-list__btn {
+  background-color: #fff;
+  border: 1px solid #151618;
+  padding: 12px 41px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.mailing-list__label {
+  margin-top: 16px;
+}
+
+.mailing-list__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.mailing-list__checkbox-style {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #151618;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+/* .mailing-list__checkbox:checked + .mailing-list__checkbox-style {
+  background-color: #151618;
+} */
+
+.mailing-list__checkbox:checked + .mailing-list__checkbox-style::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 1px;
+  left: 1px;
+  background-color: #151618;
+}
+
+.mailing-list__checkbox-text {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
 @media (max-width: 1000px) {
   .user-actions__item-search {
     margin-left: 30px;
