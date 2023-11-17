@@ -357,7 +357,7 @@ ul {
 } */
 
 .mailing-list__checkbox:checked + .mailing-list__checkbox-style::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
@@ -369,6 +369,35 @@ ul {
 .mailing-list__checkbox-text {
   font-size: 13px;
   padding-left: 20px;
+}
+
+.prioritise {
+  padding: 150px 0;
+}
+
+.prioritise__list {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 49px;
+}
+
+/* .prioritise__item {
+} */
+
+.prioritise__title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.prioritise__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1000px) {
@@ -407,6 +436,52 @@ ul {
 
   .reviews__item:last-child {
     display: none;
+  }
+
+  .main-blog {
+    padding: 120px 0;
+  }
+
+  .main-blog__list {
+    gap: 67px 20px;
+  }
+
+  .main-blog__item {
+    flex-basis: 460px;
+  }
+
+  .main-blog__item-img {
+    max-width: 230px;
+  }
+
+  .main-blog__link {
+    margin-top: 60px;
+  }
+
+  .mailing-list {
+    padding: 60px 0;
+  }
+
+  .mailing-list__title {
+    text-align: center;
+  }
+
+  .mailing-list__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mailing-list__text {
+    flex-basis: 780px;
+    text-align: center;
+  }
+
+  .prioritise {
+    padding: 120px 0;
+  }
+
+  .prioritise__list {
+    gap: 30px 210px;
   }
 }
 
