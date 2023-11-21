@@ -400,6 +400,153 @@ ul {
   margin-bottom: 30px;
 }
 
+.footer {
+  padding: 100px 0 20px;
+  background-color: #f7f2ea;
+}
+
+.footer__inner {
+  display: grid;
+  margin-bottom: 100px;
+  display: grid;
+  gap: 0 40px;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: 270px 270px 270px 270px; */
+}
+
+
+.footer__products-title,
+.footer__company-title {
+  font-size: 24px;
+  font-family: "Cormorant", serif;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.footer__products-item,
+.footer__company-item {
+  font-size: 16px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.footer__blockquote {
+  /* margin-top: 80px;
+  margin-bottom: 20px;
+  font-style: italic; */
+}
+
+.footer__blockquote-text {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: normal;
+}
+
+.footer__blockquote-author {
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.footer__blockquote-author span {
+  display: block;
+}
+
+.footer__contacts-title {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.footer__contacts-text {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__nav-logo {
+  margin-right: 40px;
+}
+
+.footer__nav-contacts {
+  margin-top: 20px;
+}
+
+.footer__nav-phone,
+.footer__nav-email {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.footer__nav-phone::before {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0;
+  top: 2px;
+  background-image: url(../images/phone.svg);
+}
+
+.footer__nav-email::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  left: 0;
+  top: 2px;
+  background-image: url(../images/mail.svg);
+}
+
+.footer__social {
+  margin-top: 40px;
+  margin-left: 114px;
+}
+
+.footer__social-list {
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+  gap: 0 20px;
+}
+
+.footer__social-link {
+  display: grid;
+}
+
+
+
+
+.footer__bottom {
+  display: flex;
+}
+
+.footer__copy {
+  margin-right: 192px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.partners-logo {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
 @media (max-width: 1000px) {
   .user-actions__item-search {
     margin-left: 30px;
